@@ -31,7 +31,10 @@ python test.py
 ## Structure
 
 ```sh
-.
+project_2
+├── documents
+│   ├── PPT # Presentation slides
+│   └── Project_Reflection # Reflection
 ├── data
 │   └── ~.nc # Raw data
 ├── processed
