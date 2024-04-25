@@ -84,6 +84,8 @@ def main():
     best_model_state = None
     train_losses = []
     val_losses = []
+    patience = 20
+    patience_counter = 0
 
     for epoch in range(num_epochs):
         train_loss = train(ts_model, train_loader, criterion, optimizer)
@@ -95,8 +97,13 @@ def main():
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             best_model_state = ts_model.state_dict()
+            patience_counter = 0
+        else:
+            patience_counter += 1
+            if patience_counter >= patience:
+                print(f'Stopping early at epoch {epoch+1}')
+                break
 
-    # Save the best model state after all epochs are completed
     torch.save(best_model_state, os.path.join(root_path, f'model/model_checkpoint_n{number}_l{leadtime}.pth'))
     print(f'Best val_Loss: {best_val_loss:.5f}')
     plot_losses(train_losses, val_losses, root_path)
