@@ -31,14 +31,14 @@ python test.py
 ## Structure
 
 ```sh
-project_2_estimation
+project_2
 ├── documents
 │   ├── PPT # Presentation slides
 │   └── Project_Reflection # Reflection
 ├── data
 │   └── ~.nc # Raw data
 ├── processed
-│   └── num (003~009) #009 is merged version.
+│   └── checkpoints
 │       ├── training.npy
 │       ├── validation.npy
 │       ├── test_1.npy

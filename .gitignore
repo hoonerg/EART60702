@@ -1,5 +1,11 @@
 project_2/data/*
 project_2/model/*.pth
 project_2/processed/*
-project_2/__pycache__/*
+project_2/__pycache__/
+project_2_estimation/data/*
+project_2_estimation/model/*.pth
+project_2_estimation/processed/*
+project_2_estimation/__pycache__/
+project_2_estimation/model/*.png
 .DS_Store
+result.txt
