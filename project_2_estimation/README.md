@@ -31,14 +31,14 @@ python test.py
 ## Structure
 
 ```sh
-project_2
+project_2_estimation
 ├── documents
 │   ├── PPT # Presentation slides
 │   └── Project_Reflection # Reflection
 ├── data
 │   └── ~.nc # Raw data
 ├── processed
-│   └── checkpoints
+│   └── num (003~009) #009 is merged version.
 │       ├── training.npy
 │       ├── validation.npy
 │       ├── test_1.npy
@@ -51,6 +51,7 @@ project_2
 ├── README.md
 ├── environment.yml # Environment
 ├── data_preprocessing.py  # Data preprocessing (.nc -> .npy)
+├── LinearRegression.py  # Baseline model (Linear regression)
 ├── train.py  # training
 ├── test.py  # test
 └── plotting.ipynb # Plotting figures
