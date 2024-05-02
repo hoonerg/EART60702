@@ -2,13 +2,14 @@
 https://github.com/hoonerg/EART60702
 
 ## Structure
+```sh
 ├── .gitignore
 ├── README.md
 ├── project_1
 ├── project_2 # Project 2 code repository for prediction
 ├── project_2_estimation # Project 2 code repository for estimation
 └── literature_review # Coursework 3 - literature review
-
+```
 
 
 
